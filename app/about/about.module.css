@@ -1,0 +1,139 @@
+
+.homeContainer{
+  max-width: 1350px;
+  margin-inline: auto;
+}
+
+.heroGrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* margin-inline: 4rem; */
+  gap: .5rem;
+  padding-top: 2rem;
+  
+  margin-inline: auto;
+}
+.heroContent{
+  background-color: var(--clr-primary);
+  border-radius: 1.25rem;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  color: var(--clr-neutral);
+  position: relative;
+}
+
+.heroText{
+  margin-bottom: 6rem;
+  color: var(--clr-neutral);
+  
+}
+.heroImg{
+  border-radius: 1.25rem;
+}
+.myImg{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  
+}
+.heroBtns{
+  position: absolute;
+  bottom: 4rem;
+
+}
+.heroBtn{
+    padding-inline: 4rem;
+    padding-block: 1.2rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--clr-neutral);
+    font-size: var(--fs-btn);
+    color: var(--clr-primary);
+    border: 1.5px solid black;
+}
+.heroBtn2{
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral);
+}
+.primaryContainer{
+  padding-top: 6rem;  
+}
+.primaryContainer h1{
+  border-bottom: 2px solid var(--clr-primary);
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  margin-inline: 1rem;
+}
+
+.subContainer{
+  color: var(--clr-neutral);
+  background-color: var(--clr-primary);
+  border-radius: 1.2rem;
+  padding-block: 4rem;
+  padding-inline: 2rem;
+  margin-block: 1.2rem;
+}
+.whyMeContainer{
+  display: grid;
+  gap: 4em;
+  
+}
+
+.secondaryBtn {
+  display: inline-block; 
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid var(--clr-primary);
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  border-radius: 2rem;
+  background-color: var(--clr-neutral);
+  color: var(--clr-primary);
+  margin-block: 2rem;
+  font-size: var(--fs-btn);
+  transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral);
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+@media (max-width: 1250px) {
+  .heroGrid{
+    margin-inline: 0;
+    padding-top: .5rem;
+  }
+  .heroBtns{
+    bottom: 1.5rem;
+  }
+}
+@media (max-width: 850px) {
+  .heroGrid{
+    grid-template-columns: 1fr;
+  }
+  .heroContent{
+    padding-inline: 1rem;
+  }
+  
+}
+@media (max-width: 580px) {
+  .heroBtns{
+    display: grid;
+    /* gap: .5em; */
+    width: 90%;
+    align-items: center;
+  }
+  .whyMeContainer{
+    padding-inline: 1.2rem;
+    margin-block: .5rem;
+  }
+}

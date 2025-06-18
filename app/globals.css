@@ -1,0 +1,92 @@
+:root {
+  font-family: 'inter', sans-serif;
+  --clr-primary: #F6F6F6;
+  --clr-accent: #FBBD06;
+  --clr-neutral: #161616;
+
+  --ff-primary: 'Open Sans', sans-serif;
+  --ff-heading: var(--ff-primary);
+  --ff-body: 'Barlow', sans-serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+  --fw-light: 200;
+
+  --fs-display: 2.875rem;
+  --fs-heading: 2.25rem;
+  --fs-semi-heading: 1.8rem;
+  --fs-body: 1.125rem;
+  --fs-mini: .875rem;
+  --fs-btn: 1.5rem;
+
+
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page-fade {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+h1{
+  font-size: var(--fs-display);
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  text-wrap: pretty;
+  line-height: 125%;
+}
+
+h2{
+  /* margin-top: 2rem; */
+  font-size: var(--fs-heading);
+  color: var(--clr-accent2);
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  padding-bottom: .2rem;
+}
+
+p{
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  padding-block: .5em;
+  max-width: 60ch;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: 1.2;
+  scroll-behavior: smooth;
+}
+ul a, ol a {
+  color: inherit;        /* Inherit color from the parent (usually the list item's color) */
+  text-decoration: none; /* Remove underline */
+}
+body{
+  background-color: var(--clr-neutral);
+  color: var(--clr-primary);
+}
+
+
+
+
+
+@media (max-width: 1050px) {
+  :root {
+    --fs-display: 2.2rem; 
+    --fs-btn: 1rem;
+    --fs-heading: 1.5rem;
+    --fs-body: 1rem;
+  }
+}
+@media (max-width: 580px) {
+  :root {
+    --fs-display: 1.5rem; 
+    --fs-heading: 1.25rem;
+    --fs-btn: .75rem;
+  }
+}

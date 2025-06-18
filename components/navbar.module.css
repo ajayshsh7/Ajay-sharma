@@ -1,0 +1,105 @@
+.nav {
+    max-width: 1280px;
+    margin: auto;
+    padding-block: 1rem;
+}
+
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    align-items: center;
+}
+
+.workBtn {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  border-radius: 1.2rem;
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid var(--clr-neutral);
+  transition: all 0.3s ease;
+}
+.workBtn:hover{
+    color: var(--clr-primary);
+    background-color: var(--clr-neutral);
+    border: 1px solid var(--clr-primary);
+}
+
+/* ✅ Hamburger styles */
+.nav {
+    padding-block: .25rem;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    gap: .3em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #eae3e3;
+    border-radius: 2px;
+}
+
+/* ✅ Mobile nav behavior */
+@media (max-width: 768px) {
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        position: relative;
+    }
+    .navContainer li{
+        font-size: 1.4rem;
+    }
+
+    .navList {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--clr-neutral);
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 999;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+        pointer-events: none;
+
+    }
+
+    .navList.open {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .navList.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        position: relative;
+        z-index: 1000;
+        /* So it stays clickable above menu */
+    }
+}

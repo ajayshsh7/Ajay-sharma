@@ -1,0 +1,64 @@
+.contactH{
+    
+}
+
+.formContainer{
+    background-color: var(--clr-primary);
+  color: var(--clr-neutral);
+  border-radius: .5rem;
+  margin-top: 4rem;
+}
+
+.form {
+    max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  
+  
+
+  .formGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--clr-neutral);
+  border-radius: 8px;
+}
+
+.textarea {
+  resize: none;
+}
+.label{
+    padding-bottom: .25rem;
+}
+
+.button {
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  background-color: var(--clr-neutral);
+  color: var(--clr-primary);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--clr-neutral);
+  max-width: 12rem;
+}
+
+.button:hover {
+  background-color: var(--clr-primary);
+  color: var(--clr-neutral);
+  border: 1px solid var(--clr-neutral);
+}
