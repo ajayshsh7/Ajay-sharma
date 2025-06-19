@@ -12,9 +12,10 @@
 .heroContent{
   background-color: var(--clr-primary);
   border-radius: 1.25rem;
-  padding-inline: 2rem;
+  padding-top: 1rem;
   color: var(--clr-neutral);
-  padding-block: 3rem;
+  padding-inline: 2rem;
+  padding-bottom: 4rem;
 }
 
 .heroText{

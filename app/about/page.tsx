@@ -1,22 +1,29 @@
+'use client';
 import styles from './about.module.css';
 import FeaturedWork from "@/components/FeaturedWork";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
 
 export default function AboutPage() {
+  const router = useRouter();
+    const handleContact = () => {
+      router.push(('/contact'));
+    };
   return (
     <main className={styles.home}>
       <div className={styles.homeContainer}>
         <div className={styles.heroGrid}>
           <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
-          <div className={styles.heroContent}><p>I&apos;m Ajay!</p><h1 className={styles.heroText}>Im a web UI/UX designer with engineering background majors in computer science.</h1>
-            <Link
-                href="https://linkedin.com/in/ajay-kumarsharma/"
-                className={`${styles.heroBtn} `}
-                target="_blank" // optional: open in new tab
-                rel="noopener noreferrer" // security best practice
-              >
-                Connect on LinkedIn
-              </Link>
+          <div className={styles.heroContent}>
+            <p>I&apos;m Ajay!</p>
+            <div className={styles.flexContent}>
+              <h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1>
+              <div className={styles.heroBtns}>
+                <button className={styles.heroBtn}
+                  onClick={handleContact}>Contact Me
+                </button>
+              </div>
+            </div>
           </div>
         </div>
         <div className={`${styles.primaryContainer} ${styles.whyMe}`}>
