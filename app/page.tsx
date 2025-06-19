@@ -1,16 +1,39 @@
+'use client';
 import "./globals.css"
 import styles from "./page.module.css";
 import FeaturedWork from "@/components/FeaturedWork";
 import Link from "next/link";
 import Form from "../components/ContactForm";
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter();
+  const handleContact = () => {
+    router.push(('/contact'));
+  };
+  const handleResources = () => {
+    router.push(('/free-resources'))
+  };
   return (
     <main className={styles.home}>
       <div className={styles.homeContainer}>
         <div className={styles.heroGrid}>
           <div className={styles.heroImg}> <img className={styles.myImg} src="/Heropic.png" alt="" /></div>
-          <div className={styles.heroContent}><p>I&apos;m Ajay!</p><h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1><div className={styles.heroBtns}><button className={styles.heroBtn}>Contact Me</button> <button className={`${styles.heroBtn} ${styles.heroBtn2}`}><Link className={styles.link} href={"/free-resources"}>Free Resources</Link></button></div></div>
+          <div className={styles.heroContent}>
+            <p>I&apos;m Ajay!</p>
+            <div className={styles.flexContent}>
+              <h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1>
+              <div className={styles.heroBtns}>
+                <button className={styles.heroBtn}
+                  onClick={handleContact}>Contact Me
+                </button>
+                <button className={`${styles.heroBtn} ${styles.heroBtn2}`}
+                  onClick={handleResources}>
+                  Free Resources
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div className={`${styles.primaryContainer} ${styles.whyMe}`}>
           <h1>Why take my help ?</h1>
@@ -26,7 +49,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      <Form />
+        <Form />
       </div>
     </main>
   );
