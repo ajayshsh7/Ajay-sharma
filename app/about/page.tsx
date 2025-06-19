@@ -9,16 +9,14 @@ export default function AboutPage() {
         <div className={styles.heroGrid}>
           <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
           <div className={styles.heroContent}><p>I&apos;m Ajay!</p><h1 className={styles.heroText}>Im a web UI/UX designer with engineering background majors in computer science.</h1>
-            <div className={styles.heroBtns}>
-              <Link
+            <Link
                 href="https://linkedin.com/in/ajay-kumarsharma/"
-                className={`${styles.heroBtn} ${styles.heroBtn2}`}
+                className={`${styles.heroBtn} `}
                 target="_blank" // optional: open in new tab
                 rel="noopener noreferrer" // security best practice
               >
                 Connect on LinkedIn
               </Link>
-            </div>
           </div>
         </div>
         <div className={`${styles.primaryContainer} ${styles.whyMe}`}>

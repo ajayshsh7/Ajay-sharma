@@ -10,7 +10,6 @@
   /* margin-inline: 4rem; */
   gap: .5rem;
   padding-top: 2rem;
-  
   margin-inline: auto;
 }
 .heroContent{
@@ -36,11 +35,6 @@
   object-position: center;
   max-width: 100%;
   
-}
-.heroBtns{
-  position: absolute;
-  bottom: 4rem;
-
 }
 .heroBtn{
     padding-inline: 4rem;
@@ -107,17 +101,11 @@
   margin-inline: auto;
 }
 
-@media (max-width: 1250px) {
+
+@media (max-width: 850px) {
   .heroGrid{
     margin-inline: 0;
     padding-top: .5rem;
-  }
-  .heroBtns{
-    bottom: 1.5rem;
-  }
-}
-@media (max-width: 850px) {
-  .heroGrid{
     grid-template-columns: 1fr;
   }
   .heroContent{
@@ -126,11 +114,10 @@
   
 }
 @media (max-width: 580px) {
-  .heroBtns{
+  .heroBtn{
     display: grid;
-    /* gap: .5em; */
-    width: 90%;
-    align-items: center;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
   .whyMeContainer{
     padding-inline: 1.2rem;
