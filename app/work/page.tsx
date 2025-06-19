@@ -13,7 +13,7 @@ export default function FeaturedWork() {
                 <div className={styles.heroGrid}>
                     <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
                     <div className={styles.heroContent}>
-            <p>I&apos;m Ajay!</p>
+            <p>My work</p>
             <div className={styles.flexContent}>
               <h1 className={styles.heroText}>Explore my work on web devlelopment and UI/UX design </h1>
               <div className={styles.heroBtns}>
