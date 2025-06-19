@@ -1,37 +1,4 @@
-.errorContainer {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fdfdfd;
-  text-align: center;
-  padding: 2rem;
-}
-
-.errorCode {
-  font-size: 6rem;
-  font-weight: bold;
-  color: #ff4c4c;
-  margin-bottom: 1rem;
-}
-
-.errorMessage {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 2rem;
-}
-
-.homeBtn {
-  padding: 0.8rem 2rem;
-  border-radius: 2rem;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.homeBtn:hover {
-  background-color: #333;
+.contactContainer{
+  max-width: 1350px;
+  margin-inline: auto;
 }
