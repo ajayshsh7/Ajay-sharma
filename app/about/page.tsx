@@ -8,7 +8,7 @@ export default function AboutPage() {
       <div className={styles.homeContainer}>
         <div className={styles.heroGrid}>
           <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
-          <div className={styles.heroContent}><p>I'm Ajay!</p><h1 className={styles.heroText}>I’m a web UI/UX designer with engineering background majors in computer science.</h1><div className={styles.heroBtns}><button className={`${styles.heroBtn} ${styles.heroBtn2}`}>Connect on LinkedIn</button></div></div>
+          <div className={styles.heroContent}><p>Im Ajay!</p><h1 className={styles.heroText}>Im a web UI/UX designer with engineering background majors in computer science.</h1><div className={styles.heroBtns}><button className={`${styles.heroBtn} ${styles.heroBtn2}`}>Connect on LinkedIn</button></div></div>
         </div>
         <div className={`${styles.primaryContainer} ${styles.whyMe}`}>
           <h1>About Me</h1>
