@@ -116,8 +116,32 @@
   }
   
   
+  @media (max-width: 1250px) {
+  .heroGrid{
+    margin-inline: 0;
+    padding-top: .5rem;
+  }
+  .heroBtns{
+    bottom: 1.5rem;
+  }
+}
+@media (max-width: 850px) {
+  .heroGrid{
+    grid-template-columns: 1fr;
+  }
+  .heroContent{
+    padding-inline: 1rem;
+  }
+  
+}
   
 @media (max-width: 580px) {
+  .heroBtns{
+    display: grid;
+    /* gap: .5em; */
+    width: 90%;
+    align-items: center;
+  }
     .workContent{
         padding-inline: 1rem;
     }
