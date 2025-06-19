@@ -10,7 +10,7 @@
   grid-template-columns: 1fr 2fr;
   /* margin-inline: 4rem; */
   gap: .5rem;
-  padding-top: 2rem;
+  padding-top: .5rem;
   margin-inline: auto;
 }
 .heroText{

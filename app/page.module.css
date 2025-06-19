@@ -8,6 +8,7 @@
   grid-template-columns: 1fr 2fr;
   gap: .5rem;
   margin-inline: auto;
+  padding-top: .5rem;
 }
 .heroContent{
   background-color: var(--clr-primary);
