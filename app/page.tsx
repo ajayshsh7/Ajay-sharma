@@ -10,7 +10,7 @@ export default function Home() {
       <div className={styles.homeContainer}>
         <div className={styles.heroGrid}>
           <div className={styles.heroImg}> <img className={styles.myImg} src="/Heropic.png" alt="" /></div>
-          <div className={styles.heroContent}><p>I&apos;m Ajay!</p><h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1><div className={styles.heroBtns}><button className={styles.heroBtn}>Contact Me</button> <button className={`${styles.heroBtn} ${styles.heroBtn2}`}>Free Resources</button></div></div>
+          <div className={styles.heroContent}><p>I&apos;m Ajay!</p><h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1><div className={styles.heroBtns}><button className={styles.heroBtn}>Contact Me</button> <button className={`${styles.heroBtn} ${styles.heroBtn2}`}><Link className={styles.link} href={"/free-resources"}>Free Resources</Link></button></div></div>
         </div>
         <div className={`${styles.primaryContainer} ${styles.whyMe}`}>
           <h1>Why take my help ?</h1>

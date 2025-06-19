@@ -1,0 +1,28 @@
+.container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  max-width: 600px;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}

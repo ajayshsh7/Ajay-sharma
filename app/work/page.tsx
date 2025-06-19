@@ -1,9 +1,26 @@
 import styles from './workpage.module.css';
-import mainstyles from '../app/page.module.css';
+import Link from 'next/link';
 
 export default function FeaturedWork() {
   return (
     <main>
+        <div className={styles.homeContainer}>
+            <div className={styles.heroGrid}>
+              <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
+              <div className={styles.heroContent}><p>My Work!</p><h1 className={styles.heroText}>Explore my work on web development and UI/UX design templates</h1>
+              <div className={styles.heroBtns}>
+              <Link
+                href="https://linkedin.com/in/ajay-kumarsharma/"
+                className={`${styles.heroBtn} ${styles.heroBtn2}`}
+                target="_blank" // optional: open in new tab
+                rel="noopener noreferrer" // security best practice
+              >
+                Connect on LinkedIn
+              </Link>
+            </div>
+              </div>
+            </div>
+        </div>
         <div className={styles.workContainer}>
             <div className={styles.primaryContainer}> <h1>Explore Work</h1>
                 <div className={styles.subContainer}>
