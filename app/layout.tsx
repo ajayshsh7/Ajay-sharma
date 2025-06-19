@@ -1,10 +1,8 @@
 import "./globals.css";
 import "./layout.module.css";
 import type { Metadata } from "next";
-import styles from '../components/navbar.module.css';
 import Navbar from "../components/Navbar"; 
-import PageTransition from '@/components/PageTransition'; 
-import RouteLoad from '@/components/RouteLoad';
+import PageTransition from '@/components/PageTransition';
 
 export const metadata: Metadata = {
   title: "Ajay Sharma",

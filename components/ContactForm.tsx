@@ -1,61 +1,39 @@
 'use client';
 
-import { useState } from 'react';
 import styles from './ContactForm.module.css';
-import { useRouter } from 'next/navigation';
 
 export default function ContactForm() {
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setLoading(true);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    const res = await fetch('https://formspree.io/f/mnnvzgnv', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        Accept: 'application/json',
-      },
-    });
-
-    if (res.ok) {
-      router.push('/thank-you');
-    } else {
-      alert('Something went wrong. Please try again.');
-      setLoading(false);
-    }
-  };
-
   return (
-    <form onSubmit={handleSubmit} className={styles.form}>
-      <div className={styles.field}>
-        <label htmlFor="name">Name</label>
-        <input required type="text" name="name" id="name" />
-      </div>
-
-      <div className={styles.field}>
-        <label htmlFor="email">Email</label>
-        <input required type="email" name="email" id="email" />
-      </div>
-
-      <div className={styles.field}>
-        <label htmlFor="subject">Subject</label>
-        <input required type="text" name="subject" id="subject" />
-      </div>
-
-      <div className={styles.field}>
-        <label htmlFor="message">Message</label>
-        <textarea required name="message" id="message" rows={5}></textarea>
-      </div>
-
-      <button type="submit" disabled={loading} className={styles.button}>
-        {loading ? 'Sending...' : 'Send Message'}
-      </button>
-    </form>
+    <div className={styles.formContainer}>
+      <h1 className={styles.contactH}>Contact Me</h1>
+      <form
+        action="https://formspree.io/f/your-form-id"
+        method="POST"
+        className={styles.form}
+      >
+        <input className={styles.input} type="hidden" name="_redirect" value="/thank-you" />
+        <div className={styles.formGrid}>
+          <div className={styles.field}>
+            <label htmlFor="name" className={styles.label}>Name</label>
+            <input className={styles.input} type="text" name="name" id="name" required />
+          </div>
+          <div className={styles.field}>
+            <label htmlFor="email" className={styles.label}>Email</label>
+            <input className={styles.input} type="email" name="email" id="email" required />
+          </div>
+        </div>
+        <div className={styles.field}>
+          <label htmlFor="subject" className={styles.label}>Subject</label>
+          <input className={styles.input} type="text" name="subject" id="subject" required />
+        </div>
+        <div className={styles.field}>
+          <label htmlFor="message" className={styles.label}>Message</label>
+          <textarea className={styles.textarea} name="message" id="message" rows={5} required></textarea>
+        </div>
+        <button type="submit" className={styles.button}>
+          Send Message
+        </button>
+      </form>
+    </div>
   );
 }

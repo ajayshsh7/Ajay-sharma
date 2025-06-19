@@ -1,5 +1,4 @@
 import styles from './Work.module.css';
-import mainstyles from '../app/page.module.css';
 
 export default function FeaturedWork() {
   return (
