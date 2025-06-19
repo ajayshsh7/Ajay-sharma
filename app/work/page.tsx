@@ -15,7 +15,7 @@ export default function FeaturedWork() {
                     <div className={styles.heroContent}>
             <p>I&apos;m Ajay!</p>
             <div className={styles.flexContent}>
-              <h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1>
+              <h1 className={styles.heroText}>Explore my work on web devlelopment and UI/UX design </h1>
               <div className={styles.heroBtns}>
                 <button className={styles.heroBtn}
                   onClick={handleContact}>Contact Me
