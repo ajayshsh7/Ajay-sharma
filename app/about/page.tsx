@@ -3,6 +3,7 @@ import styles from './about.module.css';
 import FeaturedWork from "@/components/FeaturedWork";
 import Link from "next/link";
 import { useRouter } from 'next/navigation';
+import Contact from '@/components/ContactForm';
 
 export default function AboutPage() {
   const router = useRouter();
@@ -38,6 +39,7 @@ export default function AboutPage() {
           <div className={styles.btnContainer}><Link href="/work"><button className={`${styles.seeAllWork} ${styles.secondaryBtn}`}>View All</button>
           </Link></div>
         </div>
+    <Contact />
       </div>
     </main>
   );
