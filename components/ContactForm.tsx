@@ -3,11 +3,12 @@
 import styles from './ContactForm.module.css';
 
 export default function ContactForm() {
+  const apiKey = process.env.NEXT_PUBLIC_FORM_KEY;
   return (
     <div className={styles.formContainer}>
       <h1 className={styles.contactH}>Contact Me</h1>
       <form
-        action="https://formspree.io/f/your-form-id"
+        action={apiKey}
         method="POST"
         className={styles.form}
       >

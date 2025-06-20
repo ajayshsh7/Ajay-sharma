@@ -38,8 +38,9 @@
   border-radius: 8px;
 }
 
-.textarea {
+.textarea TextArea {
   resize: none;
+  font-family: var(--ff-primary);
 }
 .label{
     padding-bottom: .25rem;

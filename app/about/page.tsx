@@ -32,7 +32,7 @@ export default function AboutPage() {
             <div className={styles.whyMeTwo}><h2>Engineering Background</h2><p>I am a computer science engineering student, enrolled from 2021 to 2025. <br /> <br /> I have an amazing  journey in engineering college which gave me a lot of memories to carry with me forever.
             </p></div><hr className={styles.whyMeLine} />
             <div className={styles.whyMeThree}><h2>Chess, Books and YouTube </h2><p>Playing chess, reading books or watching YouTube is what i usually do in my spare time, let me know if we have something in common to talk about. <br /> <br />Some of my favorite books include “This Is Marketing” by Seth Godin and “As a man Thinketh” by James Allen.</p></div><hr className={styles.whyMeLine} />
-            <div className={styles.whyMeFour}><h2>Resources and Inspirations </h2><p>I am a self taught UI/UX designer and learnt a lot from the internet. I taught myself design and freelancing with the help of internet. <br /> <br />Some of my favorite creators are Ran segall, Chris Do, Ansh Mehra, Awwwards talk.</p></div>
+            <div className={styles.whyMeFour}><h2>My Skills </h2><p>I'm a full stack web developer with hands-on experience in building responsive, user-friendly apps using React.js, Next.js, Node.js, Firebase, TypeScript, and Tailwind CSS. <br /> <br />Also a UI/UX designer with hands-on experience creating intuitive, user-centered interfaces using Figma, Adobe XD, and prototyping tools.</p></div>
           </div>
           <FeaturedWork />
           <div className={styles.btnContainer}><Link href="/work"><button className={`${styles.seeAllWork} ${styles.secondaryBtn}`}>View All</button>
