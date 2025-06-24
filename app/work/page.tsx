@@ -84,6 +84,24 @@ export default function FeaturedWork() {
 
                     </div>
                 </div>
+                <div className={styles.subContainer}>
+                    <div className={styles.workContent}>
+                        <div>
+                            <h2>Photon Website
+                                <p>A free stock image downloading website with search functionality. Images are from pexels official website.</p>
+                            </h2>
+                        </div>
+                        {/* <button>View</button> */}
+                    </div>
+                    <div className={styles.workContainer}>
+
+                        <div className={styles.bottomGrid}>
+                            <img className={`${styles.image} ${styles.item4}`} src="photon-img-1.png" alt="" />
+                            <img className={`${styles.image} ${styles.item5}`} src="photon-img-2.png" alt="" />
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </main>
     );
