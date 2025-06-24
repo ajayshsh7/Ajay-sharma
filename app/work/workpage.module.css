@@ -152,5 +152,8 @@
     padding-inline: .25rem;
     
   }
+  .bottomGrid{
+    grid-template-columns: 1fr;
+  }
     }
   
