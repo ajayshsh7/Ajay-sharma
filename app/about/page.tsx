@@ -18,7 +18,7 @@ export default function AboutPage() {
           <div className={styles.heroContent}>
             <p>I&apos;m Ajay!</p>
             <div className={styles.flexContent}>
-              <h1 className={styles.heroText}>Full-Stack Web Developer with Strong UI/UX Design Skills </h1>
+              <h1 className={styles.heroText}>Full stack web developer, Graduation major Computer Science. Love making website user friendly.</h1>
               <div className={styles.heroBtns}>
                 <button className={styles.heroBtn}
                   onClick={handleContact}>Contact Me
