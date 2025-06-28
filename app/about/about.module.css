@@ -86,13 +86,13 @@
   color: var(--clr-neutral);
   background-color: var(--clr-primary);
   border-radius: 1.2rem;
-  padding-block: 4rem;
+  padding-block: 8rem;
   padding-inline: 2rem;
   margin-block: 1.2rem;
 }
 .whyMeContainer{
   display: grid;
-  gap: 4em;
+  gap: 8em;
   
 }
 
