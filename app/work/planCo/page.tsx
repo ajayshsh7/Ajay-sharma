@@ -16,7 +16,7 @@ export default function ProjectOne() {
       buttonText="Contact Me"
       onButtonClick={() => router.push('/contact')}
       projectDesHeading = "PlanCo website"
-      projectDesText = "PlanCo is a concept website that target premium class people with family and make their travel as smooth as possible. \nIt helps users to plan their trips and adventures near them, without having to worry about the safety of their child."
+      projectDesText = "PlanCo is a concept website that target premium class people with family and make their travel as smooth as possible. It helps users to plan their trips and adventures near them, without having to worry about the safety of their child."
     />
   );
 }
