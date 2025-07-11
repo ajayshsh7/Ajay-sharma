@@ -9,6 +9,8 @@ export interface ProjectProps {
   paragraph: string;
   title: string;
   buttonText: string;
+  projectDesHeading: string;
+  projectDesText: String;
   onButtonClick?: () => void;
 }
 
@@ -17,6 +19,8 @@ const ProjectPage: React.FC<ProjectProps> = ({ imgSrc,
   paragraph,
   title,
   buttonText,
+  projectDesHeading,
+  projectDesText,
   onButtonClick, }) => {
   return (
     <div className={styles.homeContainer}>
@@ -35,6 +39,13 @@ const ProjectPage: React.FC<ProjectProps> = ({ imgSrc,
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.projectDesGrid}>
+        <div className={styles.projectDesContent}>
+          <h2>{projectDesHeading}</h2>
+          <p>{projectDesText}</p>
+        </div>
+
       </div>
     </div>
 

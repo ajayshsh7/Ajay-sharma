@@ -14,6 +14,8 @@ export default function ProjectOne() {
       paragraph="My Work"
       title="Explore my work on web development and UI/UX design"
       buttonText="Contact Me"
+      projectDesHeading = ""
+      projectDesText = ""
       onButtonClick={() => router.push('/contact')}
 
     />
