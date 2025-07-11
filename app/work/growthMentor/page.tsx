@@ -11,7 +11,7 @@ export default function ProjectOne() {
     <ProjectPage
       imgSrc={aboutheroImg}
       imgAlt="Illustration about the developer's work"
-      paragraph="My Work"
+      paragraph="Growth Mentor"
       title="Explore my work on web development and UI/UX design"
       buttonText="Contact Me"
       onButtonClick={() => router.push('/contact')}
