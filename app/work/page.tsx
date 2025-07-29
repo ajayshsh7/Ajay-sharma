@@ -102,6 +102,32 @@ export default function FeaturedWork() {
 
                     </div>
                 </div>
+                <div className={styles.subContainer}>
+                    <div className={styles.workContent}>
+                        <div>
+                            <h2>Notes App
+                                <p>Clean design and minimal features for a focused writing experience. Simple notes app for storing and mananging daily notes.</p>
+                            </h2>
+                        </div>
+                        {/* <button>View</button> */}
+                    </div>
+                    <div className={styles.workContainer}>
+
+                        <div className={styles.bottomGrid}>
+                            <img className={`${styles.image} ${styles.item4}`} src="path-to-your-image.jpg"
+  alt="Project image"
+  onError={(e) => {
+    (e.currentTarget as HTMLImageElement).src = 'https://via.placeholder.com/400x250?text=No+Image';
+  }}  />
+                            <img className={`${styles.image} ${styles.item5}`} src="path-to-your-image.jpg"
+  alt="Project image"
+  onError={(e) => {
+    (e.currentTarget as HTMLImageElement).src = 'https://via.placeholder.com/400x250?text=No+Image';
+  }} />
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </main>
     );
