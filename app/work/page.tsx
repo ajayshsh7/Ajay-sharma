@@ -4,25 +4,25 @@ import { useRouter } from 'next/navigation';
 
 export default function FeaturedWork() {
     const router = useRouter();
-  const handleContact = () => {
-    router.push(('/contact'));
-  };
+    const handleContact = () => {
+        router.push(('/contact'));
+    };
     return (
         <main>
             <div className={styles.homeContainer}>
                 <div className={styles.heroGrid}>
                     <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
                     <div className={styles.heroContent}>
-            <p>My work</p>
-            <div className={styles.flexContent}>
-              <h1 className={styles.heroText}>Explore my work on web devlelopment and UI/UX design </h1>
-              <div className={styles.heroBtns}>
-                <button className={styles.heroBtn}
-                  onClick={handleContact}>Contact Me
-                </button>
-              </div>
-            </div>
-          </div>
+                        <p>My work</p>
+                        <div className={styles.flexContent}>
+                            <h1 className={styles.heroText}>Explore my work on web devlelopment and UI/UX design </h1>
+                            <div className={styles.heroBtns}>
+                                <button className={styles.heroBtn}
+                                    onClick={handleContact}>Contact Me
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={styles.workContainer}>
@@ -87,8 +87,8 @@ export default function FeaturedWork() {
                 <div className={styles.subContainer}>
                     <div className={styles.workContent}>
                         <div>
-                            <h2>Photon Website
-                                <p>A free stock image downloading website with search functionality. Images are from pexels official website.</p>
+                            <h2>DevQuest Game
+                                <p>A quiz game app for developers to have fun while learning. Mixed quiz to test their strongest and weakest areas.</p>
                             </h2>
                         </div>
                         {/* <button>View</button> */}
@@ -96,38 +96,13 @@ export default function FeaturedWork() {
                     <div className={styles.workContainer}>
 
                         <div className={styles.bottomGrid}>
-                            <img className={`${styles.image} ${styles.item4}`} src="photon-img-1.png" alt="" />
-                            <img className={`${styles.image} ${styles.item5}`} src="photon-img-2.png" alt="" />
+                            <img className={`${styles.image} ${styles.item4}`} src="devquest-img-1.png" alt="" />
+                            <img className={`${styles.image} ${styles.item5}`} src="devquest-img-2.png" alt="" />
                         </div>
 
                     </div>
                 </div>
-                <div className={styles.subContainer}>
-                    <div className={styles.workContent}>
-                        <div>
-                            <h2>Notes App
-                                <p>Clean design and minimal features for a focused writing experience. Simple notes app for storing and mananging daily notes.</p>
-                            </h2>
-                        </div>
-                        {/* <button>View</button> */}
-                    </div>
-                    <div className={styles.workContainer}>
-
-                        <div className={styles.bottomGrid}>
-                            <img className={`${styles.image} ${styles.item4}`} src="path-to-your-image.jpg"
-  alt="Project image"
-  onError={(e) => {
-    (e.currentTarget as HTMLImageElement).src = 'https://via.placeholder.com/400x250?text=No+Image';
-  }}  />
-                            <img className={`${styles.image} ${styles.item5}`} src="path-to-your-image.jpg"
-  alt="Project image"
-  onError={(e) => {
-    (e.currentTarget as HTMLImageElement).src = 'https://via.placeholder.com/400x250?text=No+Image';
-  }} />
-                        </div>
-
-                    </div>
-                </div>
+                
             </div>
         </main>
     );
