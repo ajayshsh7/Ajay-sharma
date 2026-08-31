@@ -11,7 +11,7 @@ export default function FeaturedWork() {
         <main>
             <div className={styles.homeContainer}>
                 <div className={styles.heroGrid}>
-                    <div className={styles.heroImg}> <img className={styles.myImg} src="../abouthero.png" alt="" /></div>
+                    <div className={styles.heroImg}> <img className={styles.myImg} src="../workhero.png" alt="" /></div>
                     <div className={styles.heroContent}>
                         <p>My work</p>
                         <div className={styles.flexContent}>
