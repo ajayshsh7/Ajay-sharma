@@ -15,21 +15,21 @@ export default function ContactForm() {
         <input className={styles.input} type="hidden" name="_redirect" value="/thank-you" />
         <div className={styles.formGrid}>
           <div className={styles.field}>
-            <label htmlFor="name" className={styles.label}>Name</label>
-            <input className={styles.input} type="text" name="name" id="name" required />
+            {/* <label htmlFor="name" className={styles.label}>Name</label> */}
+            <input className={styles.input} type="text" name="name" id="name" placeholder='Name' required />
           </div>
           <div className={styles.field}>
-            <label htmlFor="email" className={styles.label}>Email</label>
-            <input className={styles.input} type="email" name="email" id="email" required />
+            {/* <label htmlFor="email" className={styles.label}>Email</label> */}
+            <input className={styles.input} type="email" name="email" id="email" placeholder='E-mail' required />
           </div>
         </div>
         <div className={styles.field}>
-          <label htmlFor="subject" className={styles.label}>Subject</label>
-          <input className={styles.input} type="text" name="subject" id="subject" required />
+          {/* <label htmlFor="subject" className={styles.label}>Subject</label> */}
+          <input className={styles.input} type="text" name="subject" id="subject" placeholder='Subject' required />
         </div>
         <div className={styles.field}>
-          <label htmlFor="message" className={styles.label}>Message</label>
-          <textarea className={styles.textarea} name="message" id="message" rows={5} required></textarea>
+          {/* <label htmlFor="message" className={styles.label}>Message</label> */}
+          <textarea className={styles.textarea} name="message" id="message" placeholder='Message' rows={5} required></textarea>
         </div>
         <button type="submit" className={styles.button}>
           Send Message

@@ -34,11 +34,15 @@
 .input,
 .textarea {
   padding: 0.75rem;
-  border: 1px solid var(--clr-neutral);
-  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid var(--clr-neutral);
+  border-radius: 0;
+  background: transparent;
+  color: var(--clr-neutral);
+  outline: none;
 }
 
-.textarea TextArea {
+.textarea {
   resize: none;
   font-family: var(--ff-primary);
 }
@@ -67,6 +71,10 @@
   background-color: var(--clr-primary);
   color: var(--clr-neutral);
   border: 1px solid var(--clr-neutral);
+}
+.input:focus,
+.textarea:focus {
+  border-bottom: 2px solid var(--clr-neutral);
 }
 
 @media (max-width: 580px) {
